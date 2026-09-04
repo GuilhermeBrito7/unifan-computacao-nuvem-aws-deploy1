@@ -64,7 +64,7 @@ jobs:
             # Roda o novo container injetando os secrets como variaveis de ambiente
             # (AWS_ACCESS_KEY_ID/SECRET nao sao passados: a EC2 usa a IAM Role para acessar o S3)
             docker run -d --name api-backend \
-              -p 80:3000 \
+              -p 107:3000 \
               -e DB_HOST=$DB_HOST \
               -e DB_USER=$DB_USER \
               -e DB_PASSWORD=$DB_PASSWORD \
